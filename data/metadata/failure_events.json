@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Failure #1",
+    "start_time": "2020-04-18 00:00:00",
+    "end_time": "2020-04-18 23:59:00",
+    "failure_type": "Air leak",
+    "severity": "High stress",
+    "maintenance_date": null,
+    "description": "Continuous high-stress pneumatic air leak in the APU system causing rapid cycling and sustained compressor duty cycles."
+  },
+  {
+    "id": 2,
+    "name": "Failure #2",
+    "start_time": "2020-05-29 23:30:00",
+    "end_time": "2020-05-30 06:00:00",
+    "failure_type": "Air leak",
+    "severity": "High stress",
+    "maintenance_date": "2020-05-30 12:00:00",
+    "description": "Severe air leak resulting in failure to maintain pressure threshold; resolved via emergency maintenance at noon on May 30."
+  },
+  {
+    "id": 3,
+    "name": "Failure #3",
+    "start_time": "2020-06-05 10:00:00",
+    "end_time": "2020-06-07 14:30:00",
+    "failure_type": "Air leak",
+    "severity": "High stress",
+    "maintenance_date": "2020-06-08 16:00:00",
+    "description": "Multi-day extended high-stress air leak episode spanning June 5 to June 7; maintenance intervention executed on June 8 at 16:00."
+  },
+  {
+    "id": 4,
+    "name": "Failure #4",
+    "start_time": "2020-07-15 14:30:00",
+    "end_time": "2020-07-15 19:00:00",
+    "failure_type": "Air leak",
+    "severity": "High stress",
+    "maintenance_date": "2020-07-16 00:00:00",
+    "description": "Sudden pressure loss and air leak episode on July 15, addressed by depot maintenance on July 16 at midnight."
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "dataset_name": "MetroPT-3",
+  "source": "UCI Machine Learning Repository (ID: 791)",
+  "equipment": "Air Production Unit (APU) Compressor, Metro do Porto, Portugal",
+  "sampling_frequency": "1 Hz (1 sample per second)",
+  "total_sensor_features": 15,
+  "analog_sensors": {
+    "TP2": {
+      "unit": "bar",
+      "description": "Pressure measured directly on the compressor outlet port."
+    },
+    "TP3": {
+      "unit": "bar",
+      "description": "Pressure generated at the pneumatic panel feeding the braking and suspension circuits."
+    },
+    "H1": {
+      "unit": "bar",
+      "description": "Pressure drop across the cyclonic oil separator filter."
+    },
+    "DV_pressure": {
+      "unit": "bar",
+      "description": "Pressure drop during the discharge of air dryer towers (drops to ~0 when loaded)."
+    },
+    "Reservoirs": {
+      "unit": "bar",
+      "description": "Compressed air pressure in the downstream main air storage reservoirs."
+    },
+    "Motor_current": {
+      "unit": "A",
+      "description": "Electric current consumed by one phase of the 3-phase compressor electric drive motor."
+    },
+    "Oil_temperature": {
+      "unit": "°C",
+      "description": "Operating lubrication oil temperature inside the compressor mechanical block."
+    }
+  },
+  "digital_sensors": {
+    "COMP": {
+      "type": "binary",
+      "description": "Air intake valve electrical signal (active/1 when compressor is offloaded or off)."
+    },
+    "DV_eletric": {
+      "type": "binary",
+      "description": "Compressor outlet discharge valve control signal (active/1 under load)."
+    },
+    "Towers": {
+      "type": "binary",
+      "description": "Desiccant drying tower selection signal (0 = Tower 1 active, 1 = Tower 2 active)."
+    },
+    "MPG": {
+      "type": "binary",
+      "description": "Motor Pump Governor electrical signal triggering load cycle when pressure < 8.2 bar."
+    },
+    "LPS": {
+      "type": "binary",
+      "description": "Low Pressure Switch electrical signal triggering emergency warning when pressure < 7.0 bar."
+    },
+    "Pressure_switch": {
+      "type": "binary",
+      "description": "Switch detecting the cyclical discharge/regeneration event in the air-drying towers."
+    },
+    "Oil_level": {
+      "type": "binary",
+      "description": "Discrete safety sensor indicating when compressor oil level falls below safe limits."
+    },
+    "Caudal_impulses": {
+      "type": "pulse_count",
+      "description": "Flow impulses measuring the absolute volume of compressed air delivered to reservoirs."
+    }
+  }
+}
